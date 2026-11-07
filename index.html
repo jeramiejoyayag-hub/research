@@ -1,79 +1,74 @@
-<<<<<<< HEAD <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GIT</title>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
 
-            .nav ul {
-                display: flex;
-                gap: 20px;
-            }
-        </style>
-    </head>
+        .card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
 
-    <body>
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
 
+        p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
 
+        .btn {
+            display: inline-block;
+            background-color: #764ba2;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
 
+        .btn:hover {
+            background-color: #5a3780;
+        }
+    </style>
+</head>
+<body>
 
-        <!DOCTYPE html>
-        <html lang="en">
+    <div class="card">
+        <h1>Hello, World! 👋</h1>
+        <p>This is my website created in Visual Studio Code and deployed live on Vercel.</p>
+        <button class="btn" onclick="alert('It works!')">Click Me</button>
+    </div>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>GIT</title>
-            <style>
-                ul {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .nav ul {
-                    display: flex;
-                    gap: 20px;
-                }
-            </style>
-        </head>
-
-        <body>
-
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <img class="img"
-                src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20241019_CUP003.jpg"
-                alt="" width="100px">
-
-            <br>
-            <button id="myButton">Click Me</button>
-            <p>
-                divina
-            </p>
-            <p>
-                curry
-            </p>
-            <script>
-
-                var button = document.getElementById("myButton");
-                var img = document.querySelector(".img");
-                button.addEventListener("click", function () {
-                    img.style.width = "200px";
-                });
-            </script>
-        </body>
-
-        </html>
+</body>
+</html>
